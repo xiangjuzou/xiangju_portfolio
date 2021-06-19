@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useImperativeHandle } from 'react';
 import {FiPlus} from 'react-icons/fi';
 import {FiX} from 'react-icons/fi';
 import  {Collapse} from 'react-bootstrap';

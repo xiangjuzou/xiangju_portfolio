@@ -1,7 +1,7 @@
 import ContactForm from '../components/ContactForm';
 import Weer from '../components/Weer';
 import  { Row, Col, Container} from 'react-bootstrap';
-import React, { Component,  Fragment } from 'react';
+import React, {Fragment } from 'react';
 
 const Contact = () => {
     return ( 

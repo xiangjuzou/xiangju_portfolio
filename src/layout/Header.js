@@ -1,4 +1,4 @@
-import  {Navbar, Nav, Button} from 'react-bootstrap';
+import  {Navbar, Nav} from 'react-bootstrap';
 
 const Header = () => {
     return ( 
@@ -10,10 +10,10 @@ const Header = () => {
 <Navbar.Collapse id="navbarSupportedContent">
 
 <Nav className='mx-auto' style={{width:"fit-content"}}  id="navbarSupportedContent" data-toggle="collapse" data-target=".navbar-collapse.show, .navbar-toggler" > 
-<Nav.Link href="/"  Home > </Nav.Link>
-<Nav.Link href="/Projects"  style={{borderBottom:'1px solid red', margin: '15px'}} data-toggle="collapse"  >Projects </Nav.Link>
-<Nav.Link href="/Overme"  style={{borderBottom:'1px solid red', margin: '15px'}} data-toggle="collapse" >Over me </Nav.Link>
-<Nav.Link href="/Contact" style={{borderBottom:'1px solid red',  margin: '15px'}}  data-toggle="collapse"  >Contact </Nav.Link>
+<Nav.Link href="/" data-toggle="collapse">Home</Nav.Link>
+<Nav.Link href="/Projects" data-toggle="collapse">Projects</Nav.Link>
+<Nav.Link href="/Overme"  data-toggle="collapse">Over me</Nav.Link>
+<Nav.Link href="/Contact" data-toggle="collapse">Contact</Nav.Link>
 </Nav>
 </Navbar.Collapse>
 </Navbar>

@@ -3,14 +3,15 @@ import  {Row, Col} from 'react-bootstrap';
 import  Chart from 'chart.js/auto';
 import  WeerIcon from "./WeerIcon.js";
 
+
 const Weer = () => {
   const[error,setError]=useState(null);
   const[isLoading,setIsloading]=useState(false);
   const[data,setData]= useState(null);
-  const coord =  {lon:6.157511,lat:52.2489};
+  const coord = {lon:6.157511,lat:52.2489};
 
   useEffect( () =>{
-   const abortCont = new AbortController();
+    const abortCont = new AbortController();
    const lat= coord.lat;
    const lon = coord.lon;
 
@@ -38,9 +39,8 @@ const Weer = () => {
     })
 
     return () => abortCont.abort();
-},[]); 
+},[coord.lat, coord.lon]); 
 
-const days = ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'];
 
 const getColor = (temp, opacity) => {
     if (temp < 20) {return `rgba(54, 162, 235, ${opacity})`;}
@@ -54,6 +54,7 @@ useEffect( () => {
          return;
     }
 
+    const days = ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'];
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
     type: 'bar',
