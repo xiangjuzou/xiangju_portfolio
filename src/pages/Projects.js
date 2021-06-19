@@ -1,4 +1,4 @@
-import  {Container, Row, Col, Button} from 'react-bootstrap';
+import  {Container, Row, Col} from 'react-bootstrap';
 import React, { Fragment } from 'react';
 
 const Project = (props) => {
@@ -15,7 +15,6 @@ const Project = (props) => {
                 <h5>{props.subtitle}</h5>       
             </Col>
             <Col md={12} lg={12}   xl={3}> 
-                {props.subimg && <img src={'../images/' + props.subimg} alt='sub' className="mb-4"/>}
                 <h6 className='mb-4' >Uitdaging:</h6>
                 {props.uitdaging}
             </Col>
@@ -49,7 +48,6 @@ const Projects = () => {
                 title="React landing website:"
                 mainimg="qhome600x391.png"
                 subtitle="Ontwikkeld voor een bedrijf die airco's en warmtepompen naar de markt wil brengen."
-                subimg=""
                 uitdaging={<p>De meeste content zet ik bij een CMS tool <a href="http://contentful.com">Contentful</a>. 
                             Hoe ga ik om met de data en de slug (urls) is een klus. 
                             Ik maakte ingewikkelkde keuzes door data per page gaan ophalen om Contenful minder vaak aan te roepen.
@@ -58,7 +56,7 @@ const Projects = () => {
                             Daardoor kan ik de gewenste resultaat bij elke sprint leveren. Responsive website wordt voorzien van een 
                             huisstijl. Hoe maak ik een stijlvolle website moet ik nog leren.</p>}
                 technical={<p>React, Javascript, CSS3, HTML5, Bootstrap, Git, Scrum, Visual studio, CMS tool Contentful</p>}
-                codelink="https://github.com/xiangjuzou/"
+                codelink="https://github.com/xiangjuzou/QmexWebsite/"
             />
             <Project 
                 title="Uitgaven tracker:"
@@ -77,27 +75,18 @@ const Projects = () => {
                 title="e-commerce website:"
                 mainimg="wijn.png"
                 subtitle="Een kaarsen website die via een e-commerce platform opgebouwd wordt."
-                subimg=""
                 uitdaging={<div>Ik gebruikte het platform <a href="https://www.jouwweb.nl/">jouwweb</a> voor de webshop.
                                Corel paintshop pro voor de verwerking van alle afbeeldingen.  
                                Het creëren van een huisstijl met de keuzes in typografie, 
                                visualiteit en funcitonaliteit zijn even belangrijke aandachtspunten. 
                      </div>}
-                
                 verbeter="Een opvallend ontwerp die de doelgroep meer aan zou kunnen spreken. Ik zou beter met SEO kunnen omgaan, 
-                door betere keyword, meta, social media verkeer. zo trekt de website meer klanten aan.
-                
-                           "
+                          door betere keyword, meta, social media verkeer. zo trekt de website meer klanten aan."
                 technical={<p>ontwikkelplatform jowweb, Corel paintshop pro </p>}
                 websitelink="https://www.fralet.nl/"
             />
-
-   
          </div>
           </Fragment> 
-
-
-    
      );
 }
  
