@@ -12,9 +12,14 @@ body  {
   letter-spacing: .22px;
 }
 
+a.nav-link a {
+  text-decoration: none;
+  color:black;
+}
 a.nav-link {
   border-bottom: 1px solid red;
-   margin: 15px;
+  margin: 15px;
+
 }
 
 .project img{
