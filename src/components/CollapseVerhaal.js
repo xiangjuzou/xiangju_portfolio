@@ -25,8 +25,6 @@ const CollapseVerhaal = ({vraag, verhaal}) => {
             <Collapse in={open} id="collapse-text"style={{width:'815px', margin:'auto'}} >
                 <p className='p-4 my-2'>{verhaal}</p>
            </Collapse> 
-
-
      </>
      );
      

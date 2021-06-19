@@ -25,7 +25,8 @@ const Project = (props) => {
                 <hr style={{borderTop:'1px #e6e6e6 solid'}}></hr>
                 <h6 className='my-4' >Technical:</h6>
                 {props.technical}
-                <a href={props.codelink} className='px-3 py-2 redborder btn'>Code</a> 
+                {props.codelink&&<a href={props.codelink} className='px-3 py-2 redborder btn'>Code</a> }
+                {props.websitelink&&<a href={props.websitelink} className='px-3 py-2 redborder btn'>Website</a>}
             </Col>
         </Row>
     </Container>
@@ -57,7 +58,7 @@ const Projects = () => {
                             Daardoor kan ik de gewenste resultaat bij elke sprint leveren. Responsive website wordt voorzien van een 
                             huisstijl. Hoe maak ik een stijlvolle website moet ik nog leren.</p>}
                 technical={<p>React, Javascript, CSS3, HTML5, Bootstrap, Git, Scrum, Visual studio, CMS tool Contentful</p>}
-                codelink="http://code.com"
+                codelink="https://github.com/xiangjuzou/"
             />
             <Project 
                 title="Uitgaven tracker:"
@@ -70,7 +71,7 @@ const Projects = () => {
                     per jaar hun uitgaven bijhouden. Daarnaast kan ik betere validatie code schrijven, die de app veiliger en gebruikersvriendelijker maakt.
                     Ook is er nu geen koppeling met een backend systeem om de data te bewaren.</p>}
                 technical={<p>HTML5, CSS3, Javascript, Bootstrap, Git, Visual studio code</p>}
-                codelink="http://code.com"
+                codelink="https://github.com/xiangjuzou/"
             />
             <Project 
                 title="e-commerce website:"
@@ -88,7 +89,7 @@ const Projects = () => {
                 
                            "
                 technical={<p>ontwikkelplatform jowweb, Corel paintshop pro </p>}
-                codelink="https://www.fralet.nl/"
+                websitelink="https://www.fralet.nl/"
             />
 
    
