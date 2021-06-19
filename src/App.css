@@ -1,38 +1,190 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body  {
+  font: normal 17px Arial  Helvetica,sans-serif ;
+  min-width: 320px;
+  line-height:1.6em ; 
+  letter-spacing: .22px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.project img{
+  width: 100%;
+  border: 1px black solid;
+  box-shadow: 4px 4px gray;
+}
+
+.redborder {
+  border: 1px solid red !important;
+  background-color: white !important;
+  color: black !important;
+}
+
+button:hover, a.home_link:hover{
+  background-color:red ;
+  color: #f4f4f4 ;
+}
+
+.project .container {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/*home*/
+#home_text{
+  opacity: 0;
+  animation: fadeIn 2s ease 3s forwards;
+  z-index: 2;
+}
+.home_link{
+  z-index: 2;
+}
+
+@keyframes  fadeIn{
+  0% { opacity:0; }
+  100% { opacity:1}
+}
+
+
+
+#home_banner{
+  background-image: url('./cssimages/Mongolia.jpg');
+  background-position: bottom; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  animation:banner 1.5s ease-in-out 1s forwards;
+  position: absolute;
+  height:89vh;
+  width: 100%;
+}
+
+@keyframes banner {
+    0% { opacity:0; top:65vh;}
+    100% { opacity:1; top:88px;  }
   }
+
+
+#home_animation {
+  position:relative;
+  margin:50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#home_animation h1 {
+  color:white;
+  position:relative;
+  letter-spacing:8px;
+  margin:180px;
+  font-size:60px;
+}
+
+#home_nl {
+ animation:nl 0.6s linear 0.7s;
+ bottom: -80px;
+ }
+
+#home_cn {
+  animation:cn 0.8s linear 0.7s;
+  left: -160px;
+ }
+
+#home_en {
+  animation:en 1.0s linear 0.7s;
+  right: -160px;
+ }
+ 
+@keyframes nl {
+  0% { bottom:-60px; color: white }
+  50% { bottom:0px; color:black }
+  100% { bottom:60px; color:white }
+}
+
+@keyframes cn {
+  0% { left:-120px; color: white }
+  50% { left:0px; color:black }
+  100% { left:120px; color:white }
+}
+
+@keyframes en {
+  0% { right:-100px; color: white }
+  50% {right:0px; color:black }
+  100% { right:100px; color:white }
+}
+
+#home_banner::after{
+  content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.4);
+}
+
+
+/*flipcard*/
+.flip_card {
+  background-color: transparent;
+  width: 300px;
+  height: 225px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+}
+
+.flip_inner {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip_front, .flip_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip_back {
+  background-color:#ccc;
+  transform: rotateY(180deg);
+  text-align:center ;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.flip_card:hover .flip_inner {
+  transform: rotateY(180deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flip_inner h3, .flip_inner h4 {
+  text-shadow : 1px 1px 0px white, 
+                -1px 1px 0px white,
+                1px -1px 0px white,
+                -1px -1px 0px white ;
 }
+
+
+
+/*responsive*/
+@media only screen and (max-width: 958px){
+    
+img, svg{
+ height:1.8rem;
+ width:1.8rem;
+ margin-left:-30px ;
+       } 
+.project img{
+ justify-items: center !important;
+}
+
+}
+
