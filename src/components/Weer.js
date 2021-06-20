@@ -15,7 +15,7 @@ const Weer = () => {
    const lat= coord.lat;
    const lon = coord.lon;
 
-   const APIkey=<THEKEY>
+   const APIkey=<KEY>;
 
    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${APIkey}&units=metric`, {signal: abortCont.signal})
    .then(res => {
@@ -108,20 +108,17 @@ useEffect( () => {
 
 return (
     <div>
-{ isLoading && <div>Loading</div> }
-{ error && <div> error</div> }
+    { isLoading && <div>Loading</div> }
+    { error && <div> error</div> }
 
-
-<div class="chart-container mx-auto" style={{position: 'relative', MaxHeight:'400px', maxWidth:'800px'}}>
+   <div className="chart-container mx-auto" >
     <canvas id="myChart"></canvas>
-    <Row>
-        <div style={{maxWidth:'50px'}}/>
-        {data && data.daily.map( (item) => <Col><WeerIcon icon={item.weather[0].icon}/></Col>) }
+    <Row className="weer_row">
+        <Col className="weer_1st"></Col>
+        {data && data.daily.map( (item,i) => <Col key={i} className="text-center" style={{padding:'0px'}}><WeerIcon icon={item.weather[0].icon}/></Col>) }
     </Row> 
+   </div>
 </div>
-
-</div>
-
 );
 
 

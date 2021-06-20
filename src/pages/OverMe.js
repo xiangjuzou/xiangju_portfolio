@@ -61,18 +61,17 @@ return (
   <Container>
    <h1 className='text-center my-5'>Ontdek random feiten over mezelf</h1>
    <Row>
-      { flipData.map( (d,index) => <Col key={index} className='mb-3 ml-1' md={6} lg={4}>
+      { flipData.map( (d,index) => <Col key={index} className='mb-3'xs={12} md={6} lg={4}>
                                  <FlipCard urllink={'/images/'+d.urllink} vraag={d.vraag+"?"} antwoord={d.antwoord} />
                               </Col>  )}
    </Row>
    </Container>
    
-   <div className='my-5 py-5'>
+   <div className='my-5 py-5 overme_faq'>
         <h1 className='my-5 text-center'>Veelgestelde vragen </h1>
         { faqData.map ( (faq, index) =>  
            <CollapseVerhaal key={index} faq={faq}/>  
-        )}
-   
+        )} 
   </div>
 
 

@@ -18,13 +18,10 @@ function App() {
     <Header/>
     <div className="content">
       <Switch>
-        <Route exact path="/"> 
-           <Home/>
-        </Route>
+        <Route exact path="/" component={Home}/> 
         <Route path="/Projects" component={Projects}/> 
         <Route path="/OverMe" component={OverMe}/>
-        <Route path="/Contact" component={Contact} />
-         
+        <Route path="/Contact" component={Contact} />   
       </Switch>
       </div>
       

@@ -11,10 +11,10 @@ const Header = () => {
 <Navbar.Collapse id="navbarSupportedContent">
 
 <Nav className='mx-auto' style={{width:"fit-content"}}  id="navbarSupportedContent" data-toggle="collapse" data-target=".navbar-collapse.show, .navbar-toggler" > 
-<Nav.Link data-toggle="collapse"><Link to="/">Home</Link></Nav.Link>
-<Nav.Link data-toggle="collapse"><Link to="/Projects">Projects</Link></Nav.Link>
-<Nav.Link data-toggle="collapse"><Link to="/Overme">Over me</Link></Nav.Link>
-<Nav.Link data-toggle="collapse"><Link to="/Contact">Contact</Link></Nav.Link>
+<Nav data-toggle="collapse"><Link to="/">Home</Link></Nav>
+<Nav data-toggle="collapse"><Link to="/Projects">Projects</Link></Nav>
+<Nav data-toggle="collapse"><Link to="/Overme">Over me</Link></Nav>
+<Nav data-toggle="collapse"><Link to="/Contact">Contact</Link></Nav>
 </Nav>
 </Navbar.Collapse>
 </Navbar>

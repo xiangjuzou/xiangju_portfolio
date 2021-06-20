@@ -5,18 +5,20 @@
   padding: 0;
 }
 
-body  {
+body {
   font: normal 17px Arial  Helvetica,sans-serif ;
   min-width: 320px;
   line-height: 1.5; 
   letter-spacing: .22px;
 }
 
-a.nav-link a {
+.navbar-nav a {
   text-decoration: none;
   color:black;
 }
-a.nav-link {
+
+.navbar-nav .navbar-nav{
+  padding-bottom: 10px;
   border-bottom: 1px solid red;
   margin: 15px;
 
@@ -44,11 +46,17 @@ button:hover, a.home_link:hover{
 }
 
 /*home*/
-#home_text{
+#home_text {
   opacity: 0;
   animation: fadeIn 2s ease 3s forwards;
-  z-index: 2;
+  z-index: 3;
 }
+
+@keyframes fadeIn{
+  0% {opacity:0; }
+  100% {opacity:1}
+}
+
 .home_link{
   z-index: 2;
 }
@@ -62,22 +70,6 @@ button:hover, a.home_link:hover{
     font-size: 43px;
   }
 }
-@media screen and (max-width: 768px) {
-  .font34 {
-    font-size: 17px;
-  }
-  
-  .font43 {
-    font-size: 22px;
-  }
-}
-
-@keyframes  fadeIn{
-  0% { opacity:0; }
-  100% { opacity:1}
-}
-
-
 
 #home_banner{
   background-image: url('./cssimages/Mongolia.jpg');
@@ -88,10 +80,11 @@ button:hover, a.home_link:hover{
   position: absolute;
   height:89vh;
   width: 100%;
+  top:100vh;
 }
 
 @keyframes banner {
-    0% { opacity:0; top:65vh;}
+    0% { opacity:0; top:100vh;}
     100% { opacity:1; top:88px;  }
   }
 
@@ -124,21 +117,6 @@ button:hover, a.home_link:hover{
   right: -160px;
  }
  
- @media screen and (max-width: 768px) {
-  #home_animation {
-    position:relative;
-    margin:0px;
-  }
-  
-  #home_animation h1 {
-    color:white;
-    position:relative;
-    letter-spacing:8px;
-    margin:0px;
-    font-size:30px;
-  }
- }
-
 @keyframes nl {
   0% { bottom:-60px; color: white }
   50% { bottom:0px; color:black }
@@ -169,7 +147,13 @@ button:hover, a.home_link:hover{
 }
 
 
-/*flipcard*/
+/*OverMe*/
+.overme_faq{
+width:50%;
+margin:auto;
+}
+
+
 .flip_card {
   background-color: transparent;
   width: 300px;
@@ -216,3 +200,100 @@ button:hover, a.home_link:hover{
                 -1px -1px 0px white ;
 }
 
+/* contact*/
+.chart-container{
+  position: relative;
+  height:400px;
+  width:800px;
+}
+.weer_row {
+  width: 800px;
+}
+
+
+div.weer_1st{
+ flex-grow: 0.2;
+}
+
+.contact_rl{
+  writing-mode:vertical-rl;
+  text-orientation:use-glyph-orientation;
+}
+
+form, form input {
+  width:90%;
+  height:auto;
+  margin:auto;
+
+}
+
+.contact_info p{
+font-size:25px;
+margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+
+  @keyframes banner {
+    0% { opacity:0; top:100vh;}
+    100% { opacity:1; top:0px;  }
+  }
+
+
+  #home_animation {
+    position:relative;
+    margin:0px;
+  }
+  
+  #home_animation h1 {
+    color:white;
+    position:relative;
+    letter-spacing:8px;
+    margin:0px;
+    font-size:30px;
+  }
+  .font34 {
+    font-size: 17px;
+  }
+  .font43 {
+    font-size: 22px;
+  }
+
+  #home_content {
+    position: relative;
+    min-height:89vh;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;          
+  }
+
+  .overme_faq{
+    width:100%;
+    margin:auto;
+    }
+  
+  .chart-container{
+   width: 360px;
+   height: 180px;          
+  } 
+
+  .weer_row {
+    width: 360px;
+  }
+
+  div.weer_1st{
+    flex-grow: 0.3;
+   }
+
+  .contact_info p{
+    font-size: 18px;
+  }
+  
+
+
+
+}

@@ -7,29 +7,21 @@ const Contact = () => {
     return ( 
   <Fragment>
 
-  <Container >
-  <Row className='my-5 px-5'>
-  <Col md={10}><Weer/></Col>
-  </Row>
-  </Container>
-
-  <div></div>
+<Container className='my-5' style={{padding:'0px'}}>
+  <Weer/>
+</Container>
+  
    
-  <Container className='my-5 py-5' >
+  <Container>
    <Row>
-   <Col xs={2} md={6} lg={2}><h1 className='my-5 py-5'style={{writingMode:'vertical-rl', textOrientation:'use-glyph-orientation'}}>CONCACT ME</h1></Col>
-   <Col xs={8} md={6}  lg={5}className="my-5 px-5 d-flex flex-column justify-content-center" >
-    <p style={{fontSize:'25px'}}> xiangju.zou@gmail.com </p>
-     <p style={{fontSize:'25px'}} > +31 61 684 84 47 </p>
+   <Col xs={3} md={4} xl={2}><h1 className='contact_rl py-3 px-3'>CONTACT ME</h1></Col>
+   <Col xs={8} md={7} xl={4} className='contact_info d-flex flex-column justify-content-center' >
+     <p> <a href="mailto:xiangju.zou@gmail.com">xiangju.zou@gmail.com</a> </p>
+     <p> +31 61 684 84 47 </p>
     </Col>
-    <Col xs={12} md={12} lg={5} ><ContactForm /> </Col>
+    <Col xs={12} md={12} xl={6} ><ContactForm /> </Col>
     </Row>
     </Container>
-
-  
-
- 
-   
   </Fragment>
 
      );
