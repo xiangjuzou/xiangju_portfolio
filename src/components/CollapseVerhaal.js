@@ -10,7 +10,7 @@ const CollapseVerhaal = ({faq}) => {
     
     return (
         <>
-          <div className='d-flex ' style={{width:'815px', margin:'auto'}}>
+          <div className='d-flex ' style={{width:'100%', padding:'10px'}}>
              <h3 className="p-4 my-2 flex-grow-1 bg-light" >{faq.vraag}</h3>
 
              <button className='my-2 px-2 bg-light' style={{border:'none'}}
@@ -21,7 +21,7 @@ const CollapseVerhaal = ({faq}) => {
                {!open? <FiPlus size ='2rem' style={{color:'red'}}/>:< FiX size ='2rem'/>} </button>
              </div>
 
-            <Collapse in={open} id="collapse-text"style={{width:'815px', margin:'auto'}} >
+            <Collapse in={open} id="collapse-text"style={{width:'100%', padding:'10px'}} >
                 <p className='p-4 my-2'>{faq.verhaal}</p>
            </Collapse> 
      </>

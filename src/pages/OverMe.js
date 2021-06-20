@@ -43,7 +43,7 @@ return (
                 werd ik nog nieuwsgieriger. Toen besloot ik te studeren voor Front-end developer.</p>
        </Col>
        <Col md={4}>
-          <img src='/images/mezelf.jpg' alt='mezelf' style={{width:'533px', height:'auto'}}/>
+          <img src='/images/mezelf.jpg' alt='mezelf' style={{width:'100%', height:'auto'}}/>
        </Col>
        </Row>
 

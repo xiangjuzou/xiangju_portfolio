@@ -53,6 +53,25 @@ button:hover, a.home_link:hover{
   z-index: 2;
 }
 
+@media screen and (min-width: 768px) {
+  .font34 {
+     font-size: 34px;
+  }
+
+  .font43 {
+    font-size: 43px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .font34 {
+    font-size: 17px;
+  }
+  
+  .font43 {
+    font-size: 22px;
+  }
+}
+
 @keyframes  fadeIn{
   0% { opacity:0; }
   100% { opacity:1}
@@ -105,6 +124,21 @@ button:hover, a.home_link:hover{
   right: -160px;
  }
  
+ @media screen and (max-width: 768px) {
+  #home_animation {
+    position:relative;
+    margin:0px;
+  }
+  
+  #home_animation h1 {
+    color:white;
+    position:relative;
+    letter-spacing:8px;
+    margin:0px;
+    font-size:30px;
+  }
+ }
+
 @keyframes nl {
   0% { bottom:-60px; color: white }
   50% { bottom:0px; color:black }
