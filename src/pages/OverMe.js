@@ -31,24 +31,24 @@ return (
    <div  className='bg-light mb-5'>
      <Container  >
       <Row  className='align-items-center'>
-       <Col md={6} className='mb-4'>
-          <h1 className='my-4'>Over Mezelf</h1>
+       <Col md={7} className='mb-4'>
+          <h1 className='my-5'>Over Mezelf</h1>
           <p className="lead">Ik heb kennis van diverse front-end technieken en heb communicatieve vaardigden in Chinees, 
                  Engels en Nederlands. Ik ben een Flexibele team player met een leergierige, gemotiveerde houding.</p>
-
-                 <h5 className='mt-5 pt-4'>Waar het allemaal is begonnen</h5>
-           <p className='mb-5 mt-3 lead'>Na een lange omweg, heb ik mijn passie gevonden. Sinds Juni 2020 ben ik met mijn studie ICT begonnen. 
+          <h5 className='mt-5 pt-4'>Waar het allemaal is begonnen</h5>
+          <p className='mb-5 mt-3 lead'>Na een lange omweg, heb ik mijn passie gevonden. Sinds Juni 2020 ben ik met mijn studie ICT begonnen. 
                 Het komt doordat ik betrokken raakte bij het bouwen van de websites <a href="http://www.skeaks.com">www.skeaks.com</a> en <a href="http://www.wenxinchineseschool.nl">www.wenxinchineseschool.nl</a>. Daarnaast 
                 heb ik meegeholpen met het verhuizen van de webshops van mijn vorige werkgever. Tijdens het realiseren van de webshop <a href="http://www.fralet.nl">www.fralet.nl</a>, 
                 werd ik nog nieuwsgieriger. Toen besloot ik te studeren voor Front-end developer.</p>
        </Col>
-       <Col md={5} className='m-2'>
+
+       <Col md={5} className='pl-5'>
           <img src='/images/mezelf.jpg' alt='mezelf' style={{width:'100%', height:'auto'}}/>
        </Col>
        </Row>
 
       <Row>
-         <Col className='mt-5'>
+         <Col className='my-5'>
           <h5>Wat ik doe</h5>
           <p className='mb-4 pt-3 lead'> Afgelopen tijd heb ik mezelf HTML5, CSS, Bootstrap, Javascript, React, scrum en Git aangeleerd. Op dit moment kan ik een website of simpele applicatie realiseren.
             Ik kan niet wachten om mijn carrière in de snel ontwikkelende ICT te maken, en ben zeer bereid om verder te leren.</p>                   

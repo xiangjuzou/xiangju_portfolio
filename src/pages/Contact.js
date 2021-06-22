@@ -13,9 +13,9 @@ const Contact = () => {
   
    
   <Container>
-   <Row>
-   <Col xs={3} md={4} xl={2}><h1 className='contact_rl py-3 px-3'>CONTACT ME</h1></Col>
-   <Col xs={8} md={7} xl={4} className='contact_info d-flex flex-column justify-content-center' >
+   <Row className='d-flex  justify-content-center align-items-center'>
+   <Col xs={3} md={4} xl={2}><h1 className='contact_rl px-3'>CONTACT ME</h1></Col>
+   <Col xs={8} md={7} xl={4} className='contact_info ' >
      <p> <a href="mailto:xiangju.zou@gmail.com">xiangju.zou@gmail.com</a> </p>
      <p> +31 61 684 84 47 </p>
     </Col>

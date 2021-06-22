@@ -86,7 +86,7 @@ useEffect( () => {
 return (
     <div>
     { isLoading && <div>Loading</div> }
-    { error && <div> error</div> }
+    { error && <div className="text-center">Error, stuur een email of bel mij even.</div> }
 
    <div className="chart-container mx-auto" >
     <canvas id="myChart"></canvas>

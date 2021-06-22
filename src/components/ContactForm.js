@@ -55,9 +55,9 @@ const ContactForm = () => {
         </form>
         )}
         {mailResult !== '' && (
-            <div id="mailresult">
+            <h6 id="mailresult" className="p-5">
                 {mailResult}
-            </div>
+            </h6>
         )}
      </div>
      

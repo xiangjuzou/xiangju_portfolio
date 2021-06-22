@@ -14,6 +14,12 @@ body {
   overflow-x: hidden;
 }
 
+footer{
+  position:fixed;
+  left:0;
+  width:0;
+}
+
 .navbar-nav a {
   text-decoration: none;
   color:black;
@@ -41,7 +47,7 @@ body {
 }
 
 /*home*/
-#home_text {
+#home_text{
   opacity: 0;
   animation: fadeIn 2s ease 3s forwards;
   z-index: 3;
@@ -149,7 +155,6 @@ width:50%;
 margin:auto;
 }
 
-
 .flip_card {
   background-color: transparent;
   width: 300px;
@@ -213,7 +218,7 @@ div.weer_1st{
 
 .contact_rl{
   writing-mode:vertical-rl;
-  text-orientation:use-glyph-orientation;
+  letter-spacing:5px;
 }
 
 form, form input, textarea {
