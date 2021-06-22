@@ -42,14 +42,14 @@ return (
                 heb ik meegeholpen met het verhuizen van de webshops van mijn vorige werkgever. Tijdens het realiseren van de webshop <a href="http://www.fralet.nl">www.fralet.nl</a>, 
                 werd ik nog nieuwsgieriger. Toen besloot ik te studeren voor Front-end developer.</p>
        </Col>
-       <Col md={4}>
+       <Col md={5} className='m-2'>
           <img src='/images/mezelf.jpg' alt='mezelf' style={{width:'100%', height:'auto'}}/>
        </Col>
        </Row>
 
       <Row>
-         <Col>
-          <h5  >Wat ik doe</h5>
+         <Col className='mt-5'>
+          <h5>Wat ik doe</h5>
           <p className='mb-4 pt-3 lead'> Afgelopen tijd heb ik mezelf HTML5, CSS, Bootstrap, Javascript, React, scrum en Git aangeleerd. Op dit moment kan ik een website of simpele applicatie realiseren.
             Ik kan niet wachten om mijn carrière in de snel ontwikkelende ICT te maken, en ben zeer bereid om verder te leren.</p>                   
          </Col>
@@ -67,7 +67,7 @@ return (
    </Row>
    </Container>
    
-   <div className='my-5 py-5 overme_faq'>
+   <div className='my-5 overme_faq'>
         <h1 className='my-5 text-center'>Veelgestelde vragen </h1>
         { faqData.map ( (faq, index) =>  
            <CollapseVerhaal key={index} faq={faq}/>  

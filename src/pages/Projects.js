@@ -22,10 +22,10 @@ const Project = (props) => {
                 <h6 className='mb-4'>Verbeter punten:</h6>
                 {props.verbeter}
                 <hr style={{borderTop:'1px #e6e6e6 solid'}}></hr>
-                <h6 className='my-4' >Technical:</h6>
+                <h6 className='my-4'>Technical:</h6>
                 {props.technical}
-                {props.codelink&&<a href={props.codelink} className='px-3 py-2 redborder btn'>Code</a> }
-                {props.websitelink&&<a href={props.websitelink} className='px-3 py-2 redborder btn'>Website</a>}
+                {props.codelink&&<a href={props.codelink} className='px-3 py-2 btn'style={{border: '1px solid red'}} >Code</a> }
+                {props.websitelink&&<a href={props.websitelink} className='px-3 py-2 btn' style={{border: '1px solid red'}}>Website</a>}
             </Col>
         </Row>
     </Container>
@@ -56,7 +56,7 @@ const Projects = () => {
                             Daardoor kan ik de gewenste resultaat bij elke sprint leveren. Responsive website wordt voorzien van een 
                             huisstijl. Hoe maak ik een stijlvolle website moet ik nog leren.</p>}
                 technical={<p>React, Javascript, CSS3, HTML5, Bootstrap, Git, Scrum, Visual studio, CMS tool Contentful</p>}
-                codelink="https://github.com/xiangjuzou/QmexWebsite/"
+                codelink="https://github.com/xiangjuzou/QmexWebsite"
             />
             <Project 
                 title="Uitgaven tracker:"
@@ -69,7 +69,7 @@ const Projects = () => {
                     per jaar hun uitgaven bijhouden. Daarnaast kan ik betere validatie code schrijven, die de app veiliger en gebruikersvriendelijker maakt.
                     Ook is er nu geen koppeling met een backend systeem om de data te bewaren.</p>}
                 technical={<p>HTML5, CSS3, Javascript, Bootstrap, Git, Visual studio code</p>}
-                codelink="https://github.com/xiangjuzou/"
+                codelink="https://github.com/xiangjuzou/uitgaven"
             />
             <Project 
                 title="e-commerce website:"

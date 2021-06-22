@@ -6,10 +6,12 @@
 }
 
 body {
-  font: normal 17px Arial  Helvetica,sans-serif ;
+  font: normal 17px Arial, Helvetica, sans-serif ;
   min-width: 320px;
-  line-height: 1.5; 
+  line-height: 1.6em; 
   letter-spacing: .22px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .navbar-nav a {
@@ -20,8 +22,7 @@ body {
 .navbar-nav .navbar-nav{
   padding-bottom: 10px;
   border-bottom: 1px solid red;
-  margin: 15px;
-
+  margin:21px;
 }
 
 .project img{
@@ -30,15 +31,9 @@ body {
   box-shadow: 4px 4px gray;
 }
 
-.redborder {
-  border: 1px solid red !important;
-  background-color: white !important;
-  color: black !important;
-}
-
-button:hover, a.home_link:hover{
+ .form_button, a.home_link:hover, .btn:hover{
   background-color:red ;
-  color: #f4f4f4 ;
+  color: #f4f4f4 !important ;
 }
 
 .project .container {
@@ -58,6 +53,7 @@ button:hover, a.home_link:hover{
 }
 
 .home_link{
+  border: 1px solid red !important;
   z-index: 2;
 }
 
@@ -206,10 +202,10 @@ margin:auto;
   height:400px;
   width:800px;
 }
+
 .weer_row {
   width: 800px;
 }
-
 
 div.weer_1st{
  flex-grow: 0.2;
@@ -220,11 +216,10 @@ div.weer_1st{
   text-orientation:use-glyph-orientation;
 }
 
-form, form input {
+form, form input, textarea {
   width:90%;
   height:auto;
   margin:auto;
-
 }
 
 .contact_info p{
@@ -234,11 +229,40 @@ margin-bottom: 8px;
 
 @media screen and (max-width: 768px) {
 
-  @keyframes banner {
+ .navbar{
+  padding-bottom: 0rem;
+}
+
+.span.navbar-toggler{
+  height:15px;
+  width:15px;
+}
+
+button.navbar-toggler{
+  margin-right:18px;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+.navbar .navbar-nav{
+    padding-bottom:0px;
+    margin:10px;
+    font-size:18px;
+    border-bottom:none;
+    font-weight: 600;
+    margin-left: 1.5rem  !important;
+  }
+
+ .navbar .navbar-nav a:hover{
+    color:red;
+  }
+
+ @keyframes banner {
     0% { opacity:0; top:100vh;}
     100% { opacity:1; top:0px;  }
   }
-
 
   #home_animation {
     position:relative;
@@ -252,9 +276,11 @@ margin-bottom: 8px;
     margin:0px;
     font-size:30px;
   }
+
   .font34 {
     font-size: 17px;
   }
+
   .font43 {
     font-size: 22px;
   }
@@ -292,8 +318,5 @@ margin-bottom: 8px;
   .contact_info p{
     font-size: 18px;
   }
-  
-
-
 
 }

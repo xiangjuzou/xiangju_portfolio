@@ -15,7 +15,7 @@ const Weer = () => {
    const lat= coord.lat;
    const lon = coord.lon;
 
-   const APIkey=<KEY>;
+   const APIkey='1b93f24a8a4716dad322caf5888daa82';
 
    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${APIkey}&units=metric`, {signal: abortCont.signal})
    .then(res => {
@@ -65,29 +65,6 @@ useEffect( () => {
             data: data.daily.map(day => day.temp.day),
             backgroundColor: data.daily.map(day => getColor(day.temp.day, 0.2)),
             borderColor: data.daily.map(day => getColor(day.temp.day,1)),
-/*
-            
-            [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-            ],
-            */
             borderWidth: 1
         },
     ]

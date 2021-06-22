@@ -16,7 +16,7 @@ const Home = () => {
         <p className='pb-5 mr-5 font43'>Ik ben Xiangju Zou, een enthousiaste <br/>front-end software developer.</p>
         <p className='pb-5 mr-5 font34'>Met kennis van HTML5, CSS3, Bootstrap, Javascript,<br/> React, Git en Scrum wil ik graag websites of<br/>web applications ontwikkelen.  </p>
       </div>
-     <a href="/overMe" className='home_link btn px-3 py-2'style={{border: '1px solid red'}}>leren kennen</a> 
+     <a href="/overMe" className='home_link btn px-3 py-2'>leren kennen</a> 
     </div>   
   </Container>
 </div>
