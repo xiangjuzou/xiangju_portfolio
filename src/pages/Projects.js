@@ -39,7 +39,7 @@ const Projects = () => {
     <Container id="title">
         <Row>
             <Col>
-                <h1 className='pt-5 mb-4'>PROJECTEN</h1>
+                <h1 className='py-4'>PROJECTEN</h1>
             </Col>
         </Row>
       </Container>

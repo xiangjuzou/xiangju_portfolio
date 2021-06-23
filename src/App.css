@@ -8,7 +8,7 @@
 body {
   font: normal 17px Arial, Helvetica, sans-serif ;
   min-width: 320px;
-  line-height: 1.6em; 
+  line-height: 1.5; 
   letter-spacing: .22px;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -308,16 +308,16 @@ button.navbar-toggler{
     }
   
   .chart-container{
-   width: 360px;
+   width: 352px;
    height: 180px;          
   } 
 
   .weer_row {
-    width: 360px;
+    width: 352px;
   }
 
   div.weer_1st{
-    flex-grow: 0.3;
+    flex-grow: 0.8;
    }
 
   .contact_info p{

@@ -18,7 +18,7 @@ const ContactForm = () => {
 
         let data = `voornaam=${ue(voorNaam)}&achternaam=${ue(achterNaam)}&telefoon=${ue(telefoon)}&email=${ue(email)}&message=${ue(message)}`;
           
-        fetch('https://www.xiangju.nl/sendmail.php', {
+        fetch('/sendmail.php', {
             method: "POST",
             body: data,
             headers: {"Content-type": "application/x-www-form-urlencoded; charset=UTF-8"}

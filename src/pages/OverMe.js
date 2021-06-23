@@ -28,7 +28,7 @@ const OverMe  = () => {
 
 return ( 
  <Fragment>
-   <div  className='bg-light mb-5'>
+   <div  className='bg-light my-4'>
      <Container  >
       <Row  className='align-items-center'>
        <Col md={7} className='mb-4'>

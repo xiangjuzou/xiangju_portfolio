@@ -92,7 +92,7 @@ return (
     <canvas id="myChart"></canvas>
     <Row className="weer_row">
         <Col className="weer_1st"></Col>
-        {data && data.daily.map( (item,i) => <Col key={i} className="text-center" style={{padding:'0px'}}><WeerIcon icon={item.weather[0].icon}/></Col>) }
+        {data && data.daily.map( (item,i) => <Col key={i} className="text-center" style={{paddingRight:'2px'}}><WeerIcon icon={item.weather[0].icon}/></Col>) }
     </Row> 
    </div>
 </div>
