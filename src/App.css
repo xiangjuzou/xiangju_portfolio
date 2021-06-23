@@ -1,8 +1,12 @@
 
 * {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html,body{
+  overflow-x: hidden;
 }
 
 body {
@@ -11,7 +15,6 @@ body {
   line-height: 1.5; 
   letter-spacing: .22px;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 footer{
@@ -233,7 +236,6 @@ margin-bottom: 8px;
 }
 
 @media screen and (max-width: 768px) {
-
  .navbar{
   padding-bottom: 0rem;
 }
@@ -294,13 +296,6 @@ button.navbar-toggler{
     position: relative;
     min-height:89vh;
   }
-  
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2rem;          
-  }
 
   .overme_faq{
     width:100%;
@@ -325,3 +320,4 @@ button.navbar-toggler{
   }
 
 }
+

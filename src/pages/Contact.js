@@ -12,7 +12,7 @@ const Contact = () => {
 </Container>
   
    
-  <Container className="my-5 py-4">
+  <Container className="my-5 pt-5">
    <Row className='d-flex justify-content-center align-items-center'>
    <Col xs={3} md={4} xl={2}><h1 className='contact_rl px-3'>CONTACT ME</h1></Col>
    <Col xs={8} md={7} xl={4} className='contact_info mx-2 ' >

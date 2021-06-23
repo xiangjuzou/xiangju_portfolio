@@ -13,8 +13,8 @@ const Home = () => {
   <Container>
     <div style={{height:'89vh'}} className='d-flex flex-column align-items-center justify-content-center'>
       <div id='home_text'>
-        <p className='pb-5 mr-5 font43'>Ik ben Xiangju Zou, een enthousiaste <br/>front-end software developer.</p>
-        <p className='pb-5 mr-5 font34'>Met kennis van HTML5, CSS3, Bootstrap, Javascript,<br/> React, Git en Scrum wil ik graag websites of<br/>web applications ontwikkelen.  </p>
+        <p className='pb-5 font43'>Ik ben Xiangju Zou, een enthousiaste <br/>front-end software developer.</p>
+        <p className='pb-5 font34'>Met kennis van HTML5, CSS3, Bootstrap, Javascript,<br/> React, Git en Scrum wil ik graag websites of<br/>web applications ontwikkelen.  </p>
       </div>
      <a href="/overMe" className='home_link btn px-3 py-2'>leren kennen</a> 
     </div>   

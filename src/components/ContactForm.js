@@ -33,7 +33,7 @@ const ContactForm = () => {
 
 
     return ( 
-    <div className='bg-light text-center my-4'  >
+    <div className='bg-light text-center mt-5'  >
         {mailResult === '' && (
         <form onSubmit={onSubmit}  className='p-4' >
             <div>

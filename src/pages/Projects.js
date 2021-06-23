@@ -14,11 +14,11 @@ const Project = (props) => {
                 <img src={'../images/' +props.mainimg} alt='main' className="mb-4" />
                 <h5>{props.subtitle}</h5>       
             </Col>
-            <Col md={12} lg={12}   xl={3}> 
+            <Col md={12} lg={12}  xl={3}> 
                 <h6 className='mb-4' >Uitdaging:</h6>
                 {props.uitdaging}
             </Col>
-            <Col md={12} lg={12} xl={3}  className='mb-4'> 
+            <Col md={12} lg={12} xl={3}  className='my-4'> 
                 <h6 className='mb-4'>Verbeter punten:</h6>
                 {props.verbeter}
                 <hr style={{borderTop:'1px #e6e6e6 solid'}}></hr>
@@ -39,7 +39,7 @@ const Projects = () => {
     <Container id="title">
         <Row>
             <Col>
-                <h1 className='py-4'>PROJECTEN</h1>
+                <h1 className='pt-4'>PROJECTEN</h1>
             </Col>
         </Row>
       </Container>
@@ -53,8 +53,7 @@ const Projects = () => {
                             Ik maakte ingewikkelkde keuzes door data per page gaan ophalen om Contenful minder vaak aan te roepen.
                             Om verschillende componenten vaker te gebruiken, schreef ik deze met meerdere styling opties.</p>}
                 verbeter={<p> Ik had meer tijd moeten besteden aan het gesprek met de productower, zodat ik haar eisen beter begrijp. 
-                            Daardoor kan ik de gewenste resultaat bij elke sprint leveren. Responsive website wordt voorzien van een 
-                            huisstijl. Hoe maak ik een stijlvolle website moet ik nog leren.</p>}
+                            Daardoor kan ik de gewenste resultaat bij elke sprint leveren.</p>}
                 technical={<p>React, Javascript, CSS3, HTML5, Bootstrap, Git, Scrum, Visual studio, CMS tool Contentful</p>}
                 codelink="https://github.com/xiangjuzou/QmexWebsite"
             />
@@ -65,14 +64,13 @@ const Projects = () => {
                 uitdaging={<p>Verschillende classes, zolas UI class, ingevuld bericht (msg)class maakte mijn code overzichtelijker.
                     De waarde van de lijst zet ik in een array, daardoor kan ik de data beter bijhouden. De betekenissen van OOP zijn
                     krachtig, als ik hem in de praktijk wil toepassen.</p>}
-                verbeter={<p>Ik zou meer functions kunnen schrijven om de app uit te bereiden. Dan kunnen de gebruikers per maand of
-                    per jaar hun uitgaven bijhouden. Daarnaast kan ik betere validatie code schrijven, die de app veiliger en gebruikersvriendelijker maakt.
+                verbeter={<p>Ik kan betere validatie code schrijven, die de app veiliger en gebruikersvriendelijker maakt.
                     Ook is er nu geen koppeling met een backend systeem om de data te bewaren.</p>}
                 technical={<p>HTML5, CSS3, Javascript, Bootstrap, Git, Visual studio code</p>}
                 codelink="https://github.com/xiangjuzou/uitgaven"
             />
             <Project 
-                title="e-commerce website:"
+                title="E-commerce website:"
                 mainimg="wijn.png"
                 subtitle="Een kaarsen website die via een e-commerce platform opgebouwd wordt."
                 uitdaging={<div>Ik gebruikte het platform <a href="https://www.jouwweb.nl/">jouwweb</a> voor de webshop.

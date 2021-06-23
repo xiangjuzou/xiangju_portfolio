@@ -4,8 +4,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap-reboot.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from"./pages/Home";
-import OverMe from"./pages/OverMe";
 import Projects from "./pages/Projects";
+import OverMij from"./pages/OverMij";
 import Contact from './pages/Contact';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
@@ -19,8 +19,8 @@ function App() {
     <div className="content">
       <Switch>
         <Route exact path="/" component={Home}/> 
-        <Route path="/Projects" component={Projects}/> 
-        <Route path="/OverMe" component={OverMe}/>
+        <Route path="/Projecten" component={Projects}/> 
+        <Route path="/OverMij" component={OverMij}/>
         <Route path="/Contact" component={Contact} />   
       </Switch>
       </div>
