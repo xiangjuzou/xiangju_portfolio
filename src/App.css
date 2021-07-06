@@ -1,46 +1,73 @@
-
+@import url('http://fonts.cdnfonts.com/css/verdana-pro-cond');
 * {
   margin: 0;
   padding:0;
   box-sizing: border-box;
 }
 
-html,body{
+html, body{
   overflow-x: hidden;
+  background-color:#292929;
 }
 
 body {
-  font: normal 17px Arial, Helvetica, sans-serif ;
+  font: normal 17px 'Verdana Pro Cond', Arial, Helvetica, sans-serif ;
   min-width: 320px;
   line-height: 1.5; 
   letter-spacing: .22px;
   box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
 }
 
 footer{
-  position:fixed;
-  left:0;
-  width:0;
+  background-color:#292929;
+  color:white;
+  position:absolute;
+  bottom:0;
 }
 
-.navbar-nav a {
+#facebookSign{
+margin-right:20px;
+}
+
+.navbar{
+  background-color:rgba(52, 73, 94, 0.7) ;
+}
+
+.navbar .navbar-nav a {
   text-decoration: none;
-  color:black;
+  font-size:18px;
+  font-weight:500;
+  color:white !important;
+  padding:8px 0;
+  margin:0px 15px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
 }
 
-.navbar-nav .navbar-nav{
-  padding-bottom: 10px;
-  border-bottom: 1px solid red;
-  margin:21px;
+.navbar .navbar-nav a:hover{
+  color:red;
+  border-bottom: red 3px solid;
 }
 
 .project img{
-  width: 100%;
+  max-width: 500px;
+  height:auto;
   border: 1px black solid;
   box-shadow: 4px 4px gray;
 }
 
- .form_button, a.home_link:hover, .btn:hover{
+#subtitel{
+  width:82%;
+}
+a.home_buttonlink {
+  border:1px solid red !important;
+  color:black;
+  font-size:20px;
+  z-index:3;
+}
+ .form_button, a.home_buttonlink:hover, .btn:hover{
   background-color:red ;
   color: #f4f4f4 !important ;
 }
@@ -52,7 +79,7 @@ footer{
 /*home*/
 #home_text{
   opacity: 0;
-  animation: fadeIn 2s ease 3s forwards;
+  animation: fadeIn 2s ease 1.8s forwards;
   z-index: 3;
 }
 
@@ -61,49 +88,61 @@ footer{
   100% {opacity:1}
 }
 
-.home_link{
-  border: 1px solid red !important;
-  z-index: 2;
+a.home_buttonlink{
+  opacity: 0;
+  animation: fadeInBtn 1s ease 2.5s forwards;
+  z-index: 3;
+}
+@keyframes fadeInBtn{
+  0% {opacity:0; }
+  100% {opacity:1}
 }
 
-@media screen and (min-width: 768px) {
-  .font34 {
+
+ .font34 {
      font-size: 34px;
   }
-
   .font43 {
     font-size: 43px;
   }
+
+#home_content{
+  position:relative;
+  width: 100%;
+  height:100%;
 }
 
 #home_banner{
-  background-image: url('./cssimages/Mongolia.jpg');
-  background-position: bottom; 
-  background-repeat: no-repeat; 
+  background-image: url('./cssimages/Mongolia.jpg'); 
+  background-repeat:no-repeat; 
   background-size: cover; 
+  background-position: bottom;
   animation:banner 1.5s ease-in-out 1s forwards;
-  position: absolute;
-  height:89vh;
+  position:absolute;
+  top: 0;
+  left: 0; 
   width: 100%;
-  top:100vh;
+  min-height:100%; 
 }
 
 @keyframes banner {
-    0% { opacity:0; top:100vh;}
-    100% { opacity:1; top:88px;  }
+    0% { opacity:0; }
+    100% { opacity:1; }
   }
 
 
 #home_animation {
   position:relative;
-  margin:50px;
+  width: 100%;
+  height:100vh;
 }
+
 
 #home_animation h1 {
   color:white;
   position:relative;
   letter-spacing:8px;
-  margin:180px;
+  padding:100px;
   font-size:60px;
 }
 
@@ -113,32 +152,32 @@ footer{
  }
 
 #home_cn {
-  animation:cn 0.8s linear 0.7s;
-  left: -160px;
+  animation:cn 0.8s linear 0.8s;
+  left: -80px;
  }
 
 #home_en {
   animation:en 1.0s linear 0.7s;
-  right: -160px;
+  right: -100px;
  }
  
 @keyframes nl {
-  0% { bottom:-60px; color: white }
-  50% { bottom:0px; color:black }
-  100% { bottom:60px; color:white }
+  0% {top:-100px; color: white }
+  50% {top:-20px; color:black }
+  100% {top:10px; color:white }
 }
-
 @keyframes cn {
-  0% { left:-120px; color: white }
-  50% { left:0px; color:black }
-  100% { left:120px; color:white }
+  0% {right:-100px; color: white }
+  50% {right:50px; color:black }
+  100% {right:200px; color:white }
 }
 
 @keyframes en {
-  0% { right:-100px; color: white }
-  50% {right:0px; color:black }
-  100% { right:100px; color:white }
+  0% { bottom:-120px; color: white }
+  50% {bottom:20px; color:black }
+  100% {bottom:120px; color:white }
 }
+
 
 #home_banner::after{
   content: '';
@@ -153,10 +192,7 @@ footer{
 
 
 /*OverMe*/
-.overme_faq{
-width:50%;
-margin:auto;
-}
+
 
 .flip_card {
   background-color: transparent;
@@ -222,6 +258,7 @@ div.weer_1st{
 .contact_rl{
   writing-mode:vertical-rl;
   letter-spacing:5px;
+  font-weight:500;
 }
 
 form, form input, textarea {
@@ -230,15 +267,17 @@ form, form input, textarea {
   margin:auto;
 }
 
-.contact_info p{
-font-size:25px;
-margin-bottom: 8px;
+form div {
+font-size:18px;
 }
 
-@media screen and (max-width: 768px) {
- .navbar{
-  padding-bottom: 0rem;
+#contactTitel{
+font-size:38px;
+font-weight:700 ;
 }
+
+
+@media screen and (max-width: 768px) {
 
 .span.navbar-toggler{
   height:15px;
@@ -253,48 +292,34 @@ button.navbar-toggler{
   box-shadow: none !important;
 }
 
-.navbar .navbar-nav{
-    padding-bottom:0px;
-    margin:10px;
-    font-size:18px;
+.navbar{
+  background-color: #ccc !important;
+  z-index:10;
+}
+
+.navbar .navbar-nav a{
+    font-size:15px;
+    color:black !important ;
+    margin-top:12px;
+    margin-left:12px;
     border-bottom:none;
-    font-weight: 600;
-    margin-left: 1.5rem  !important;
   }
 
- .navbar .navbar-nav a:hover{
-    color:red;
-  }
-
- @keyframes banner {
-    0% { opacity:0; top:100vh;}
-    100% { opacity:1; top:0px;  }
-  }
-
-  #home_animation {
-    position:relative;
-    margin:0px;
+  .navbar .navbar-nav a:hover{
+   color:royalblue !important;
+   border-bottom:none;
   }
   
   #home_animation h1 {
-    color:white;
-    position:relative;
-    letter-spacing:8px;
-    margin:0px;
-    font-size:30px;
+    font-size:38px;
   }
 
   .font34 {
-    font-size: 17px;
+    font-size: 21px;
   }
 
   .font43 {
-    font-size: 22px;
-  }
-
-  #home_content {
-    position: relative;
-    min-height:89vh;
+    font-size: 26px;
   }
 
   .overme_faq{
@@ -315,9 +340,17 @@ button.navbar-toggler{
     flex-grow: 0.8;
    }
 
-  .contact_info p{
-    font-size: 18px;
-  }
+   .collapse_section div, #collapse-text{
+     width:80% !important;
+     margin:auto!;
+   }
+   .project img{
+   width:300px;
+   text-align:center;
+   }
 
+   #contactTitel{
+     font-size:28px;
+   }
 }
 

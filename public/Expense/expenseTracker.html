@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link href='expenseTracker.css' rel='stylesheet'/>
+    <title>expense tracker</title>
+
+</head>
+<body>
+    <div class='container'>
+        <h1 class='my-5 text-center text-warning'>Uitgaven Tracker</h1>
+        <form class="mx-auto">
+            <div class="mb-3 row">
+                <label for="date" class="col-sm-4 col-form-label">Datum:</label>
+                <div class="col-sm-8">
+                    <input type="date"  class="form-control" value="2021-06-01" id='datum'>
+                </div>
+            </div>
+
+            <div class="mb-3 row" >
+                <label  class="col-sm-4 col-form-label" for='inkomen'>Inkomsten:</label> 
+                <div class="col-sm-8"> 
+                    <input type="number"  class="form-control" id='inkomen'>
+                </div>
+            </div>
+
+            <div class="mb-3 row" >
+                <label  class="col-sm-4 col-form-label" for='uitgeven'>Uitgaven:</label> 
+                <div class="col-sm-8"> 
+                    <input type="number"  class="form-control" id='uitgeven'>
+                </div>
+            </div>
+         
+            <div class="mb-3 row" >
+                <label  class="col-sm-4 col-form-label" for='categorieën'>Categorieën:</label> 
+                <div class="col-sm-8">
+                    <select for='categorieën'  class="form-control-plaintext" id='categorieën'> 
+                        <option value='De woning'>De woning </option>
+                        <option value='Huishoudelijke uitgaven'> Huishoudelijke uitgaven</option>
+                        <option value='Vaste lasten'> Vaste lasten</option>
+                        <option value='Reserveringsuitgaven'> Reserveringsuitgaven</option>
+                        <option value='Luxe en participatie'> Luxe en participatie</option>
+                    </select>
+                </div>
+            </div>
+         
+            <div class="mb-3 row">
+                <label for="opmerking" class="col-sm-4 col-form-label">Opmerking:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="opmerking"  >
+                </div>
+            </div>  
+            
+            <div class="d-flex">
+                <button class="btn btn-warning col-2 mx-auto mt-5" type="submit">Toevoegen</button>    
+            </div>
+        </form>
+
+        <div class="my-5 d-flex">
+            <div class="mx-auto">
+                <button class="btn btn-secondary" type="button" id ="total">Totale Uitgaven</button>
+                <button class="btn btn-secondary" type="button" id ="savings">Gespaard Bedrag</button>
+            </div>
+        </div>
+
+        <table class="text-center">
+            <thead>
+                <tr class='mt-5'>
+                    <th>Datum</th>
+                    <th>Inkomsten</th>
+                    <th>Uitgaven</th>
+                    <th>Categorie</th>
+                    <th>Opmerking</th>
+                </tr>
+            </thead>
+            <tbody id="list" ></tbody>
+        </table>
+    </div>
+
+
+    <!-- totalen modal schermpje -->
+   <div class="modal" tabindex="-1" id="totalenmodal">
+    <div class="modal-dialog">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h5 class="modal-title">Totale uitgaven</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+               <p> De totale uitgaven zijn <span id="TOTALEUITGAVEN"></span>.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!--saving modal -->
+    <div class="modal" tabindex="-1"  id="savingsmodal">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title">Gespaard bedrag</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+               </div>
+
+                <div class="modal-body">
+                   <p> Het gespaarde bedrag is <span id="SAVINGS"></span>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="expenseTracker.js"></script>
+</body>
+</html>

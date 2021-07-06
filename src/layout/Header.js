@@ -1,33 +1,22 @@
 import  {Navbar, Nav} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
-const Header = () => {
+function Header () {
     return ( 
 
-<div>
-<Navbar collapseOnSelect expand="md">
-<Navbar.Brand href="/" style={{border:'1px solid red'}} className='p-2 mx-5'> xz </Navbar.Brand>
-<Navbar.Toggle aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" />
-<Navbar.Collapse id="navbarSupportedContent">
-
-<Nav className='mx-auto' style={{width:"auto"}}  id="navbarSupportedContent" data-toggle="collapse" data-target=".navbar-collapse.show, .navbar-toggler" > 
-<Nav data-toggle="collapse"><Link to="/">Home</Link></Nav>
-<Nav data-toggle="collapse"><Link to="/Projecten">Projecten</Link></Nav>
-<Nav data-toggle="collapse"><Link to="/OverMij">Over mij</Link></Nav>
-<Nav data-toggle="collapse"><Link to="/Contact">Contact</Link></Nav>
-</Nav>
-</Navbar.Collapse>
-</Navbar>
-
-</div>
+<Navbar collapseOnSelect expand="md">   
+        <Navbar.Brand href="/" style={{border:'1px solid red', color:'white'}} className='p-1 mx-5'> xz </Navbar.Brand>
+        <Navbar.Toggle/>
+        <Navbar.Collapse >
+        <Nav className="mx-auto"> 
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="Projecten">Projecten</Nav.Link>
+            <Nav.Link href="Overmij">Over mij</Nav.Link>
+            <Nav.Link href="Contact">Contact</Nav.Link>
+        </Nav>
+        </Navbar.Collapse>
+    </Navbar>
      );
 }
  
-
-
-
 export default Header ;
-
-
-
-
