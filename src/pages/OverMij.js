@@ -38,8 +38,8 @@ return (
 
           <h3 className='my-4 pt-5'>Waar het allemaal is begonnen</h3>
           <p className='my-5 lead'>Na een lange omweg heb ik mijn passie gevonden. Sinds zomer 2020 ben ik met mijn studie ICT begonnen. 
-                Het komt doordat ik betrokken raakte bij het bouwen van de websites <a href="http://www.skeaks.com" target="_blank">www.skeaks.com</a> en <a href="http://www.wenxinchineseschool.nl" target="_blank">www.wenxinchineseschool.nl</a>. Daarnaast 
-                heb ik meegeholpen met het verhuizen van de webshops van mijn vorige werkgever. Tijdens het realiseren van de webshop <a href="http://www.fralet.nl" target="_blank">www.fralet.nl</a>, 
+                Het komt doordat ik betrokken raakte bij het bouwen van de websites <a href="http://www.skeaks.com" target="_blank" rel="noreferrer">www.skeaks.com</a> en <a href="http://www.wenxinchineseschool.nl" target="_blank" rel="noreferrer">www.wenxinchineseschool.nl</a>. Daarnaast 
+                heb ik meegeholpen met het verhuizen van de webshops van mijn vorige werkgever. Tijdens het realiseren van de webshop <a href="http://www.fralet.nl" target="_blank" rel="noreferrer">www.fralet.nl</a>, 
                 werd ik nog nieuwsgieriger. Toen besloot ik te studeren voor Front-end developer.</p>
        </Col>
 
