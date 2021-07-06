@@ -11,7 +11,7 @@ html, body{
 }
 
 body {
-  font: normal 17px 'Verdana Pro Cond', Arial, Helvetica, sans-serif ;
+  font: normal 16px 'Verdana Pro Cond', Arial, Helvetica, sans-serif ;
   min-width: 320px;
   line-height: 1.5; 
   letter-spacing: .22px;
@@ -67,7 +67,7 @@ a.home_buttonlink {
   font-size:20px;
   z-index:3;
 }
- .form_button, a.home_buttonlink:hover, .btn:hover{
+ .form_button:hover, a.home_buttonlink:hover, .btn:hover{
   background-color:red ;
   color: #f4f4f4 !important ;
 }
@@ -237,6 +237,13 @@ a.home_buttonlink{
                 -1px 1px 0px white,
                 1px -1px 0px white,
                 -1px -1px 0px white ;
+}
+/*project*/
+.project_btn a{
+  border-radius:8px ;
+}
+.project_btn{
+  margin-left:auto;
 }
 
 /* contact*/

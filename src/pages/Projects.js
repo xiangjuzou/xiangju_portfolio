@@ -14,16 +14,16 @@ const Project = (props) => {
                 <img src={'../images/' +props.mainimg} alt='main' className="mb-4" />
                 <h4 className="mb-4" id='subtitel'>{props.subtitle}</h4>       
             </Col>
-            <Col sm={12} md={6} xl={4} className='my-4 px-2'> 
+            <Col sm={12} md={6} xl={4} className='my-4 px-3 mx-auto'> 
                 <h5 className='mb-4'>Info:</h5>
                 {props.info}
             </Col>
-            <Col sm={12} md={6} xl={3} className='my-4 px-3'> 
+            <Col sm={12} md={6} xl={2} className='my-4 project_btn'> 
                 <h5 className='mb-4'>Technical:</h5>
                 {props.technical} 
-                {props.websitelink&&<a href={props.websitelink }  target='_blank'rel="noreferrer" className='px-3 py-2 btn my-4 mx-2' style={{border: '1px solid red'}}>Bezoek website</a>}
-                {props.applink&&<a href={props.applink}  target='_blank' className='px-3 py-2 btn my-4 mx-2' style={{border: '1px solid red'}}>Bekijk APP</a>}
-                {props.codelink&&<a href={props.codelink} target='_blank'  className='px-3 py-2 btn my-4 mx-2'style={{border: '1px solid red'}} >Bekijk code</a> }
+                {props.websitelink&&<a href={props.websitelink }  target='_blank'rel="noreferrer" className='px-3 py-2 btn my-2 mx-1' style={{border: '1px solid red'}}>Bezoek website</a>}
+                {props.applink&&<a href={props.applink}  target='_blank' className='px-3 py-2 btn my-2 mx-1' style={{border: '1px solid red'}}>Bekijk APP</a>}
+                {props.codelink&&<a href={props.codelink} target='_blank'  className='px-3 py-2 btn my-2 mx-1'style={{border: '1px solid red'}} >Bekijk code</a> }
             </Col>
         </Row>
     </Container>
@@ -57,7 +57,7 @@ const Projects = () => {
             />
             <Project 
                 title="Weer APP:"
-                mainimg="weerfoto.png"
+                mainimg="weerFoto.png"
                 subtitle="Voorbeeld om het weer voor de komende week te zien."
                 info={<p>Het voorbeeld laat het weer in Deventer zien. Ik koppelde de <a href="https://openweathermap.org/" target="_blank" rel="noreferrer">Openweathermap</a> API met Chart.js.
                    Daarmee render ik een staafdiagrm op de pagina om de temperatuur te tonen. </p>}
