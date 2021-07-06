@@ -7,7 +7,7 @@
 
 html, body{
   overflow-x: hidden;
-  background-color:#292929;
+  background-color:#f4f4f4;
 }
 
 body {
@@ -147,35 +147,34 @@ a.home_buttonlink{
 }
 
 #home_nl {
- animation:nl 0.6s linear 0.7s;
- bottom: -80px;
+ animation:nl 1s linear 0.8s;
  }
 
 #home_cn {
-  animation:cn 0.8s linear 0.8s;
-  left: -80px;
+  animation:cn 1s linear 0.9s;
  }
 
 #home_en {
-  animation:en 1.0s linear 0.7s;
-  right: -100px;
+  animation:en 1s linear 0.8s;
  }
  
-@keyframes nl {
-  0% {top:-100px; color: white }
-  50% {top:-20px; color:black }
-  100% {top:10px; color:white }
+@keyframes nl{
+  0%   {left:0px; top:100px; color: white}
+  50%  {left:200px; top:0px; color:black}
+  100% {left:100px; top:100px; color:white}
 }
+
 @keyframes cn {
-  0% {right:-100px; color: white }
-  50% {right:50px; color:black }
-  100% {right:200px; color:white }
+  0%   {right:0px; top:0px; color: white}
+  45%  {right:100px; top:0px; color:black}
+  75%  {right:0px; top:100px; color:black}
+  100% {right:0px; top:0px; color:white}
 }
 
 @keyframes en {
-  0% { bottom:-120px; color: white }
-  50% {bottom:20px; color:black }
-  100% {bottom:120px; color:white }
+  0%   {left:0px; top:0px; color: white}
+  50%  {left:100px; top:0px; color:black}
+  100% {left:0px; top:0px; color:white}
 }
 
 
