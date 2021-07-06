@@ -15,7 +15,7 @@ const Weer = () => {
    const lat= coord.lat;
    const lon = coord.lon;
 
-   const APIkey='1b93f24a8a4716dad322caf5888daa82';
+   const APIkey='#';
 
    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${APIkey}&units=metric`, {signal: abortCont.signal})
    .then(res => {
