@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/verdana-pro-cond');
+@import url('https://fonts.cdnfonts.com/css/verdana-pro-cond');
 * {
   margin: 0;
   padding:0;
@@ -11,10 +11,10 @@ html, body{
 }
 
 body {
-  font: normal 16px 'Verdana Pro Cond', Arial, Helvetica, sans-serif ;
+  font: normal 15px 'Verdana Pro Cond', Arial, Helvetica, sans-serif ;
   min-width: 320px;
   line-height: 1.5; 
-  letter-spacing: .22px;
+  letter-spacing: .21px;
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden;
@@ -160,7 +160,7 @@ a.home_buttonlink{
  
 @keyframes nl{
   0%   {left:0px; top:100px; color: white}
-  50%  {left:200px; top:0px; color:black}
+  50%  {left:100px; top:0px; color:black}
   100% {left:100px; top:100px; color:white}
 }
 
@@ -191,7 +191,17 @@ a.home_buttonlink{
 
 
 /*OverMe*/
+#over_img{
+  max-width:100%;
+  height:auto;
+  opacity: 0.7;
+  transition: transform .22s;
+}
 
+#over_img:hover{
+  transform:scale(1.1);
+  opacity:1;
+}
 
 .flip_card {
   background-color: transparent;
@@ -206,7 +216,7 @@ a.home_buttonlink{
   text-align: center;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
+  transition: transform 0.9s;
   transform-style: preserve-3d;
 }
 
@@ -214,7 +224,7 @@ a.home_buttonlink{
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
@@ -321,11 +331,13 @@ button.navbar-toggler{
   }
 
   .font34 {
-    font-size: 21px;
+    font-size: 20px;
+    text-align: center;
   }
 
   .font43 {
-    font-size: 26px;
+    font-size: 25px;
+    text-align: center;
   }
 
   .overme_faq{
@@ -357,6 +369,11 @@ button.navbar-toggler{
 
    #contactTitel{
      font-size:28px;
+   }
+
+   .over_part{
+     padding:10px 0;
+
    }
 }
 

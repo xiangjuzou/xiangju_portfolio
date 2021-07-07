@@ -28,29 +28,29 @@ const OverMij  = () => {
 
 return ( 
  <Fragment>
-   <div className='mb-4 mt-5'>
+   <div className='mb-4 pt-5'>
      <Container  >
       <Row className='align-items-center'>
-       <Col md={7} className='mb-4 mx-2'>
+       <Col md={6} lg={7} className='mb-4'>
           <h1 className='my-4'>Over Mezelf</h1>
           <p className="lead mb-5">Ik heb kennis van diverse front-end technieken en heb communicatieve vaardigheden in Chinees, 
                  Engels en Nederlands. Ik ben een flexibele team player met een leergierige, gemotiveerde houding.</p>
 
-          <h3 className='my-4 pt-5'>Waar het allemaal is begonnen</h3>
-          <p className='my-5 lead'>Na een lange omweg heb ik mijn passie gevonden. Sinds zomer 2020 ben ik met mijn studie ICT begonnen. 
+          <h3 className='my-4 my-5 pt-4 over_part'>Waar het allemaal is begonnen</h3>
+          <p className='mb-5 lead'>Na een lange omweg heb ik mijn passie gevonden. Sinds zomer 2020 ben ik met mijn studie ICT begonnen. 
                 Het komt doordat ik betrokken raakte bij het bouwen van de websites <a href="http://www.skeaks.com" target="_blank" rel="noreferrer">www.skeaks.com</a> en <a href="http://www.wenxinchineseschool.nl" target="_blank" rel="noreferrer">www.wenxinchineseschool.nl</a>. Daarnaast 
                 heb ik meegeholpen met het verhuizen van de webshops van mijn vorige werkgever. Tijdens het realiseren van de webshop <a href="http://www.fralet.nl" target="_blank" rel="noreferrer">www.fralet.nl</a>, 
                 werd ik nog nieuwsgieriger. Toen besloot ik te studeren voor Front-end developer.</p>
        </Col>
 
-       <Col md={4} className='pl-5'>
-          <img src='/images/map.png' alt='map' style={{width:'100%', height:'auto'}}/>
+       <Col md={5} lg={4} className='offset-1 mx-auto'>
+          <img src='/images/fotoju.png' alt='fotoju' id='over_img'/>
        </Col>
        </Row>
 
       <Row >
-         <Col className='mt-5'>
-          <h3 className='my-4' >Wat ik doe</h3>
+         <Col>
+          <h3 className='my-4 pt-4 over_part' >Wat ik doe</h3>
           <p className='my-5 lead'> Afgelopen tijd heb ik mezelf HTML5, CSS, Bootstrap, Javascript, React, scrum en Git aangeleerd. Op dit moment kan ik een website of simpele applicatie realiseren.
             Ik kan niet wachten om mijn carrière in de snel ontwikkelende ICT te maken, en ben zeer bereid om verder te leren.</p>                   
          </Col>
@@ -68,7 +68,7 @@ return (
    </Container>
    
    <div className='my-5 collapse_section'>
-        <h1 className='my-5 py-4 text-center'>Veelgestelde vragen </h1>
+        <h1 className='my-5 py-4 text-center over_part'>Veelgestelde vragen </h1>
         { faqData.map ( (faq, index) =>  
            <CollapseVerhaal key={index} faq={faq}/>  
         )}

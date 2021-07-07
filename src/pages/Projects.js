@@ -74,7 +74,7 @@ const Projects = () => {
                     De waarden van de lijst zet ik in een array, daardoor kan ik de data beter bijhouden.</p>}
                
                 technical={<p>HTML5, CSS3, Javascript, Bootstrap, Git, Visual studio code</p>}
-                applink="/expense/expensetracker.html"
+                applink="/Expense/expenseTracker.html"
                 codelink="https://github.com/xiangjuzou/uitgaven"
             />
             <Project 
