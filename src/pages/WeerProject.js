@@ -1,18 +1,15 @@
-import Weer from '../components/Weer';
-import { Container} from 'react-bootstrap';
-import React, {Fragment } from 'react';
+import Weer from "../components/Weer";
+import { Container } from "react-bootstrap";
+import React, { Fragment } from "react";
 
 const WeerProject = () => {
-    return ( 
-  <Fragment>
+  return (
+    <Fragment>
+      <Container className="my-4 px-1">
+        <Weer />
+      </Container>
+    </Fragment>
+  );
+};
 
-<Container className='my-4 px-1' >
-  <Weer/>
-</Container>
-  
-  </Fragment>
-
-     );
-}
- 
-export default WeerProject ;
+export default WeerProject;
